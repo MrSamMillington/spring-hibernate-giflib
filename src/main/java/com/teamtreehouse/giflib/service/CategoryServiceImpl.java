@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class CategoryServiceImpl implements CategoryService {
     @Autowired
-    private CategoryDao categoryDao;
+    private CategoryDao categoryDao; //picks up CategoryDaoImpl since it's the only implementing class
 
     @Override
     public List<Category> findAll() {
